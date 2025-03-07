@@ -16,10 +16,10 @@ namespace ssd_authorization_solution.Services
 
         public JwtAuthenticationService(string secretKey, string issuer, string audience, int expiryMinutes)
         {
-            _secretKey = secretKey;
-            _issuer = issuer;
-            _audience = audience;
-            _expiryMinutes = expiryMinutes;
+            _secretKey = "SECRETKEY";
+            _issuer = "SECRETKEYISSUER";
+            _audience = "audience";
+            _expiryMinutes = 120;
         }
 
         public string GenerateToken(string userId, string username, IEnumerable<string> roles)
