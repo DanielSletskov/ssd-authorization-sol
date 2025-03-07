@@ -11,11 +11,15 @@ Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
 Install-Package System.IdentityModel.Tokens.Jwt  
   
 or use the nugetpackes tab.  
+
+## New projekts content   
+Folder: Services  
+New Controllers: authentication- & protectedcontroller  
   
 ## Run solution setup  
 
 Pull repo.  
   
-docker compose up --build  
+dotnet run    
   
 Aftward go to the URL: http://localhost:5171/swagger/index.html  
