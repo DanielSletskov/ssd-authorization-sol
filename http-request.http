@@ -1,0 +1,19 @@
+### Login to get JWT token
+POST https://localhost:7042/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "password"
+}
+
+### Store the token from the response in a variable
+@authToken = {{login.response.body.token}}
+
+### Access protected endpoint
+GET https://localhost:7042/api/protected
+Authorization: Bearer {{authToken}}
+
+### Access admin endpoint (will fail with default user)
+GET https://localhost:7042/api/protected/admin
+Authorization: Bearer {{authToken}}
