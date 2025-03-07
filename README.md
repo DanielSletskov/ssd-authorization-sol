@@ -20,6 +20,6 @@ New Controllers: authentication- & protectedcontroller
 
 Pull repo.  
   
-dotnet run    
+run command in terminal: dotnet run    
   
-Aftward go to the URL: http://localhost:5171/swagger/index.html  
+Aftward go to the URL: http://localhost:5171/swagger/index.html and see API results.  
