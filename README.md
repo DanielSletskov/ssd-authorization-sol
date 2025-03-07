@@ -11,20 +11,13 @@ I chose to fouces on this because it eliminates the dependency of a database.
 Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
 Install-Package System.IdentityModel.Tokens.Jwt
 
-## Solutioner setup  
+## Run solution setup  
 ```sh
 docker compose up --build  
   
 Aftward go to the URL: http://localhost:5171/swagger/index.html  
 
 ```  
-  
-<http://localhost:5171/swagger/index.html>
 
-
-
-
-
-Set `useCookies` and `useSessionCookies` to true for login.
 
 
